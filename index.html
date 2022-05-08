@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2">
+            <h1 class="titulo">Decodificador de cifra de césar e base64</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="div3">
+            <div class="divfilho3">
+                <label for=""> <strong>Escolha o tipo de criptografia:</strong></label>
+                <select class="divoptions" name="#" id="selecoesCripto">           
+                <option value="1" id="cifraOption">Cifra de césar</option>
+                <option value="2" id="baseOption">Base64</option>
+                </select>
+                <br>
+            </div>
+            <div class="div3">
+                <label> <strong>Escolha se você quer:</strong></label>
+                <select class="divoptions" name="#" id="selecoesCodDecod">           
+                <option value="codificar" id="selecaoCodificar">Codificar</option>
+                <option value="decodificar" id="selecaoDecodificar">Decodificar</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div id="deslocamento" class="div5">
+            <label for="#"><strong>Agora selecione o valor de deslocamento:</strong></label>
+            <input class="passosbord" id="deslocCifra" value="deslocCifra" name="#" type="range" min="0" max="25" oninput="this.nextElementSibling.value = this.value"/>
+            <output>10</output>
+        </div>
+        <br>
+        <div class="divpai6">
+            <div class="divfilho6">
+                <div class="divneta6">
+                    <label class="instrucao" for=""><strong>Escreva sua mensagem:</strong></label>
+                  
+                    <textarea value="entrada" class="divtextarea" name="#" placeholder="Sua mensagem..." id="entrada" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div class="divneta6">
+                    <label class="instrucao" for=""><strong>Resultado:</strong></label>
+                 
+                    <textarea value="saida" class="divtextarea" name="#" placeholder="Seu resultado..." id="saida" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="div7" id="divEnviar">
+            <input type="button" class="button1" id="botaoCod" value="Codificar Mensagem"></input>
+        </div>
+        <br>
+        <footer>
+            <a href="https://www.linkedin.com/in/enrico-martins018/"><img src="http://www.ifs.edu.br/images/arquivos/Diae/linkedIn-logo-0_1.png" width="120em" alt=""></a>
+            <p class="dev"><strong>Desenvolvido por Enrico Martins</strong></p>
+            <a href="https://github.com/enricomartins018"><img src="https://miro.medium.com/max/1200/1*dDNpLKu_oTLzStsDTnkJ-g.png" width="120em" alt=""></a>
+        </footer>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
