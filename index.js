@@ -16,7 +16,7 @@ selecoesCripto.addEventListener('change', function (event) {
         deslocamento.style.display = 'none'
     }
 });
-// FUNÇÃO E VARIÁVEIS PARA QUE SE EU SELECIONAR A OPÇÃO DE DECODIFICAR, APAREÇA O BOTÃO DE DECODIFICAR MENSAGEM  LOGO EMBAIXO E VICE-VERSA.
+// FUNÇÃO E VARIÁVEIS PARA QUE SE EU SELECIONAR A OPÇÃO DE DECODIFICAR, APAREÇA O BOTÃO DE "DECODIFICAR MENSAGEM"  LOGO EMBAIXO E VICE-VERSA.
 selecoesCodDecod.addEventListener('change', function (event) {
     if (selecoesCodDecod.value == 'codificar') {
         divEnviar.innerHTML = `<input type="button" class="button1" id="botaoCod" value="Codificar Mensagem"></input>`
@@ -27,8 +27,8 @@ selecoesCodDecod.addEventListener('change', function (event) {
 
 // FUNÇÃO CODIFICAR CÉSAR E BASE
 function codificarCesarBase() {
-    if (selecoesCodDecod.value == '2' && codificar.checked) {
-        entradaValue = entrada
+    if (selecoesCodDecod.value == 'codificar' && codificar.checked) {
+        entradaValue = saida
         //FUNÇÃO DE CODIFICAR A BASE64 
         saida.value = btoa(entradaValue)
     } else if (selecoesCodDecod == '1' && codificar.checked) {
